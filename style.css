@@ -80,3 +80,10 @@ main{
     font-size: xx-large;
 
 }
+footer{
+    text-align: center;
+    height: 20px;
+    background-color: #1060ff;
+    color: white;
+
+}
