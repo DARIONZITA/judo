@@ -41,6 +41,8 @@ section > div{
     width: 50%;
 }
 section{
+    color: white;
+    background-image: linear-gradient(to right , black 20% , white);
     border: 1px solid #2A457A;
     display: flex;
 }
