@@ -37,31 +37,35 @@ body{
     -webkit-mask-image: radial-gradient(ellipse, black 60% , rgba(255, 255, 255, 0) 70% );
     mask-image: radial-gradient(ellipse, black 50%, rgba(221, 221, 221, 0.5));}
 #historia{
-    margin-left: 40px;
+    background-image: linear-gradient(to right , rgb(39, 39, 39) 20% , rgb(0, 0, 0));
+    padding-left: 40px;
     font-size: x-large;
+    line-height: 2em;
 }
 a > img{
     width:20% ;
 }
-#dimg{
-    position: absolute;
+
+#historiaimg{
+    box-shadow: inset 3px 3px 3px 3px black;
+    background-image: url(img/criador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#imghistoria{
-    width: 100%;
+svg{
+    height: 100%;
+    width: 30%;
 }
-#divisor{
-    width: 200px;
-    height: 100px;
-    background-color: rgba(0, 0, 255, 0.377);
-}
+
 section > div{
     width: 50%;
 }
 section{
+    position: relative;
     color: white;
-    background-image: linear-gradient(to right , black 20% , white);
     border: 1px solid #2A457A;
     display: flex;
+    height: 150vh;
 }
 #video{
     display: flex;
@@ -94,8 +98,9 @@ a{
     width: 80px;
 }
 nav{
-    display: flex;
+    display:grid;
     background-color: var(--co2);
+    grid-template-columns: 120px 120px 120px 120px 120px;
     
 
 }
@@ -103,15 +108,20 @@ nav > a {
     margin: 3px;
     border-radius: 5px;
     padding: 1vh;
+    transition-property: width;
+    transition-duration: 1s;
+    width: 0px;
 }
 nav > a:hover{
     
     background-color: var(--cor5);
     box-shadow:3px 3px 3px 2px black;
+    width: 100px;
     
 }
 
 header{
+    position: relative;
     background-color:var(--cor3);
     background-image: linear-gradient( to top, #0759fd ,#00154e);
 }
