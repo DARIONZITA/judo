@@ -43,7 +43,8 @@ body{
 a > img{
     width:20% ;
 }
-#historiaimg{
+#dimg{
+    position: absolute;
 }
 #imghistoria{
     width: 100%;
@@ -71,7 +72,7 @@ section{
 #video1{
     border-radius: 12px;
     height: 500px;
-    width: 00px;
+    width: 800px;
 
 }
 
