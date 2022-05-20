@@ -32,6 +32,9 @@ body{
     margin-left: 40px;
     font-size: x-large;
 }
+a > img{
+    width:20% ;
+}
 #historiaimg{
 }
 #imghistoria{
