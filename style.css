@@ -100,9 +100,19 @@ a{
 nav{
     display:grid;
     background-color: var(--co2);
-    grid-template-columns: 120px 120px 120px 120px 120px;
+    grid-template-columns: 120px 120px 120px 120px 120px auto;
     
 
+}
+form{
+    justify-self: end;
+}
+form > img{
+    width: 40px;
+    padding-right: 10px;
+}
+form :hover{
+    
 }
 nav > a {
     margin: 3px;
@@ -110,7 +120,7 @@ nav > a {
     padding: 1vh;
     transition-property: width;
     transition-duration: 1s;
-    width: 0px;
+    width: 0%;
 }
 nav > a:hover{
     
@@ -121,9 +131,9 @@ nav > a:hover{
 }
 
 header{
-    position: relative;
     background-color:var(--cor3);
     background-image: linear-gradient( to top, #0759fd ,#00154e);
+    width: 100%;
 }
 #header-top{
     height: 15vh;
