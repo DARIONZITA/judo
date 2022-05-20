@@ -48,6 +48,11 @@ a > img{
 #imghistoria{
     width: 100%;
 }
+#divisor{
+    width: 200px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.377);
+}
 section > div{
     width: 50%;
 }
@@ -66,7 +71,7 @@ section{
 #video1{
     border-radius: 12px;
     height: 500px;
-    width: 800px;
+    width: 00px;
 
 }
 
