@@ -100,16 +100,44 @@ a{
 nav{
     display:grid;
     background-color: var(--co2);
-    grid-template-columns: 120px 120px 120px 120px 120px auto;
-    
+    grid-template-columns: 120px 120px 120px 120px 120px auto;   
 
 }
-form{
-    justify-self: end;
+input{
+    border-radius: 5px 0px 0px 5px;
+    height: 70%;
+    align-items: center;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.363);
+    transform: scaleX(0);
+    transition: transform 2s;
 }
-form > img{
+
+
+form:hover input{
+    transform: scaleX(100%);
+}
+
+input:focus-visible{
+    outline:none ;
+}
+
+form{
+    margin-right: 20px;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+}
+form::after{
+    background-color: gray;
+    width: 10px;
+    padding-right: 0px;
+}
+#botao-pq{
     width: 40px;
-    padding-right: 10px;
+    height: 70%;
+    border-radius: 0px 4px 4px 0px;
+    
+
 }
 form :hover{
     
