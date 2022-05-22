@@ -1,7 +1,24 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@media screen and (max-width:1440px){
+    section{
 
+    }
+    #historia{
+        grid-column:1/3;
+        width: 100%;
+    }
+    #historiaimg{
+        grid-column:1/3;
+        width: 100%;
+        height: 500px;
+    }
+    svg{
+    display: none;
+    }
+
+}
 :root{
     --fontnormal:'Courgette', cursive;;
     --fonttitulo:'Permanent Marker', cursive;
@@ -39,8 +56,13 @@ body{
 #historia{
     background-image: linear-gradient(to right , rgb(39, 39, 39) 20% , rgb(0, 0, 0));
     padding-left: 40px;
+    padding-right: 20px;
     font-size: x-large;
     line-height: 2em;
+    box-sizing: border-box;
+}
+section > div{
+    width: 50vw;
 }
 a > img{
     width:20% ;
@@ -51,23 +73,27 @@ a > img{
     background-image: url(img/criador.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 svg{
     height: 100%;
     width: 30%;
 }
-
-section > div{
-    width: 50%;
-}
 section{
-    position: relative;
     color: white;
     border: 1px solid #2A457A;
-    display: flex;
-    height: 150vh;
-}
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 1400px auto;
+    
+    
+}       
+  
+
 #video{
+    grid-area: 'video';
+    grid-column-start: 1;
+    grid-column-end: 3;
     display: flex;
     background-image: url(img/video1.jpg);
     justify-content: center;
@@ -149,11 +175,10 @@ nav > a {
     width: 0%;
 }
 nav > a:hover{
-    
     background-color: var(--cor5);
     box-shadow:3px 3px 3px 2px black;
     width: 100px;
-    
+    cursor: pointer;
 }
 
 header{
@@ -185,5 +210,4 @@ footer{
     height: 20px;
     background-color: #1060ff;
     color: white;
-
 }
