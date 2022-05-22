@@ -220,14 +220,18 @@ footer{
     }
     svg{
     display: none;
-    }
+    }   
     nav > a{
-        display:none;}
+        display: none;
+    }
+
+    
     nav{
         display: flex;
         justify-content: space-between;
     }
     #menu{
+        position: relative;
         display: flex;
         justify-self:start;
         margin-left:12px ;
@@ -239,7 +243,40 @@ footer{
         padding-left: 4px;
         padding-right: 4px;
     }
+    #menu:hover #menuoculto{
+        visibility: visible;
+    }
     input{
         height: 100%;
     }
+    #menuoculto{
+        visibility: hidden;
+        display: grid;
+        border-radius: 12px;
+        box-shadow: 3px 3px 3px 3px rgba(122, 122, 122, 0.548);
+        position: absolute;
+        background-color: black;
+        top: 100%;
+        left: -10%;
+    }
+    #menuoculto > a{
+        display: flex;
+        text-decoration: none;
+        color: aliceblue;
+        margin: 3px;
+        border-radius: 5px;
+        padding: 1vh;
+        transition-property: width;
+        transition-duration: 1s;
+        width: 0%;
+        background-color: #07a3fd;
+        
+    }
+    #menuoculto > a:hover{
+        background-color: var(--cor5);
+        box-shadow:3px 3px 3px 2px black;
+        width: 200px;
+        cursor: pointer;
+    }
+    
 }
