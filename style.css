@@ -91,12 +91,7 @@ aside#main{
 main  h1 {
     text-shadow: 2px 2px 1px var(--cor1);
 }
-a{
-    display: flex;
-    text-decoration: none;
-    color: aliceblue;
-    width: 80px;
-}
+
 nav{
     display:grid;
     background-color: var(--co2);
@@ -111,8 +106,9 @@ input{
     transform: scaleX(0);
     transition: transform 2s;
 }
-
-
+button:hover{
+    background-color: #0759fd;
+}
 form:hover input{
     transform: scaleX(100%);
 }
@@ -127,22 +123,23 @@ form{
     justify-self: end;
     align-items: center;
 }
-form::after{
-    background-color: gray;
-    width: 10px;
-    padding-right: 0px;
+form > a{
+    background-color: rgb(255, 246, 246);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius:0 4px 4px 0;
 }
-#botao-pq{
-    width: 40px;
-    height: 70%;
-    border-radius: 0px 4px 4px 0px;
-    
-
+form > a:target input{
+    transform: scalex(100%);
+    background-color: #fd3807;
 }
-form :hover{
-    
+form > a:hover{
+    background-color: #07a3fd;
 }
 nav > a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
     margin: 3px;
     border-radius: 5px;
     padding: 1vh;
