@@ -21,6 +21,10 @@
 h1{
     font-family: var(--fonttitulo);
 }
+#vestimenta{
+    background-image: url(img/kimono.jpg);
+    background-size: cover;
+}
 body{
     margin: 0px;
     padding: 0px;
