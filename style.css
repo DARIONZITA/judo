@@ -115,6 +115,7 @@ form:hover input{
 
 input:focus-visible{
     outline:none ;
+    transform: scaleX(100%);
 }
 
 form{
