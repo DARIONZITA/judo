@@ -189,9 +189,15 @@ aside#main{
  }
 /*kimono*/
 #vestimenta{
-    background-image: url(img/kimono.jpg);
-    background-size: cover;
+    background-image: url(img/judohome1.jpg);
+    background-color: #00154e;
+    background-position: bottom center;
+    justify-content: center;
 }
+#imgk1{
+    width: 100%;
+}
+
 /*rodapé*/
 footer{
     text-align: center;
